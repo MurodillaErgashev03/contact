@@ -47,7 +47,7 @@ input {
     margin-bottom: 5px;
     font-size: 20px;
     border-radius: 7px;
-    border: 1px solid #3A4249;
+    border: 2px solid #3A4249;
     outline-color:  #008EFD;
 }
 
@@ -61,9 +61,16 @@ input {
     border-radius: 7px;
 }
 .hero-right-box{
-    background-color: white;
     width: 600px;
     padding-left: 20px;
+}
+
+.right-item-box{
+    background:white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px red;
 }
 .right-number{
     color: #008EFD;
@@ -76,4 +83,12 @@ input {
     margin-top: -10px;
     display: block;
     color: red;
+}
+
+.border{
+    border:  2px solid red;
+}
+
+.border-1{
+    border: 2px solid teal;
 }

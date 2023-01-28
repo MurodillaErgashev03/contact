@@ -9,12 +9,6 @@ const elSpan2 = document.querySelector("#span-id-2");
 
 
 
-
-
-
-
-
-
 elBtn.addEventListener("click", function () {
 
     const name = elName.value;
@@ -27,37 +21,68 @@ elBtn.addEventListener("click", function () {
         elSpan.className = "salom";
         elSpan1.className = "salom";
         elSpan2.className = "salom";
+
+        elRelat.className = "border";
+        elName.className = "border";
+        elPhone.className = "border";
+
     }
     else if ((elName.value === "" && elRelat.value === "")) {
         elSpan.className = "salom";
         elSpan1.className = "salom";
         elSpan2.className = "hero-span";
+
+        elRelat.className = "border";
+        elName.className = "border";
+        elPhone.className = "border-1";
     }
     else if ((elName.value === "" && elPhone.value === "")) {
         elSpan.className = "salom";
         elSpan1.className = "hero-span";
         elSpan2.className = "salom";
+
+        elName.className = "border";
+        elPhone.className = "border";
+        elRelat.className = "border-1";
     }
 
     else if ((elPhone.value === "" && elRelat.value === "")) {
         elSpan.className = "hero-span";
         elSpan1.className = "salom";
         elSpan2.className = "salom";
+
+        elPhone.className = "border";
+        elRelat.className = "border";
+        elName.className = "border-1";
+
     }
     else if (elName.value === "") {
         elSpan.className = "salom";
         elSpan1.className = "hero-span";
         elSpan2.className = "hero-span";
+
+        elName.className = "border";
+        elRelat.className = "border-1";
+        elPhone.className = "border-1";
     }
     else if (elRelat.value === "") {
         elSpan.className = "hero-span";
         elSpan1.className = "salom";
         elSpan2.className = "hero-span";
+
+        elRelat.className = "border";
+        elPhone.className = "border-1";
+        elName.className = "border-1";
+
     }
     else if (elPhone.value === "") {
         elSpan.className = "hero-span";
         elSpan1.className = "hero-span";
         elSpan2.className = "salom";
+
+        elPhone.className = "border";
+        elRelat.className = "border-1";
+        elName.className = "border-1";
     }
 
 
@@ -67,6 +92,11 @@ elBtn.addEventListener("click", function () {
         elSpan.className = "hero-span";
         elSpan1.className = "hero-span";
         elSpan2.className = "hero-span";
+
+        elRelat.className = "border-1";
+        elName.className = "border-1";
+        elPhone.className = "border-1";
+
 
 
         const newDiv = document.createElement("div");
